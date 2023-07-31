@@ -1,0 +1,15 @@
+.square {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.circle {
+    border-radius: 40% 0 0 0 ;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    display: inline-block;
+}
