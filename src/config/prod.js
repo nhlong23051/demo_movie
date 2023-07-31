@@ -1,3 +1,3 @@
 export default {
-    baseURL: 'https://movienew.cybersoft.edu.vn/api/'
+    apiUrl: 'https://movienew.cybersoft.edu.vn/api/'
 }

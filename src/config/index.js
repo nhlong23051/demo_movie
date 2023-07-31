@@ -1,23 +1,24 @@
-import Develop from './dev'
-import Production from './prod'
+import Development from "./dev";
+import Production from "./prod";
 
 const getEnv = (_env) => {
-    if (_env) {
-        return _env
-    }
+  if (_env) {
+    return _env;
+  }
 
-    return 'development'
+  return "development";
 };
 
-const env = process.env.NODE_EVN;
+const env = process.env.NODE_ENV;
 
 const config = {
-    development:{
-        ...Develop
-    },
-    production:{
-        ...Production
-    }
-}
+  development: {
+    ...Development,
+  },
 
-export default config[getEnv(env)]
+  production: {
+    ...Production,
+  },
+};
+
+export default config[getEnv(env)];
